@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Exercice 6</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navbar">
+  <a href="exercice1.html">Ex 1</a>
+  <a href="exercice2.html">Ex 2</a>
+  <a href="exercice3.html">Ex 3</a>
+  <a href="exercice4.html">Ex 4</a>
+  <a href="exercice5.html">Ex 5</a>
+  <a href="exercice6.html">Ex 6</a>
+  <a href="exercice7.html">Ex 7</a>
+  <a href="exercice8.html">Ex 8</a>
+  <a href="exercice9.html">Ex 9</a>
+  <a href="exercice10.html">Ex 10</a>
+  <a href="solution6.html">Sol 6</a>
+</div>
+
+<div class="container">
+<h1>Exercice 6</h1>
+<p>Crée une fonction qui prend un nombre en paramètre et affiche sa valeur doublée dans la console.</p>
+<input type="number" id="nombre" placeholder="Écris un nombre">
+<button onclick="runExercice()">Doubler</button>
+<pre id="output"></pre>
+
+<script>
+function runExercice() {
+  let n = Number(document.getElementById('nombre').value);
+  function doubler(x) {
+    return x * 2;
+  }
+  let result = doubler(n);
+  document.getElementById('output').textContent = result;
+  console.log(result);
+}
+</script>
+
+<p class="notice"><a href="solution6.html">Voir la solution et cours</a></p>
+</div>
+</body>
+</html>

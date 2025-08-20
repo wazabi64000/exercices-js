@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Solution Exercice 9</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navbar">
+  <a href="exercice9.html">Ex 9</a>
+</div>
+
+<div class="container">
+<h1>Solution Exercice 9</h1>
+
+<pre>
+function somme(tab) {
+  return tab.reduce((acc, n) => acc + n, 0);
+}
+console.log(somme([1,2,3])); // Affiche 6
+</pre>
+
+<p>Cours simplifié :</p>
+<ul>
+<li>tab.reduce((acc, n) => acc + n, 0) : additionne tous les éléments du tableau.</li>
+<li>acc : accumulateur (somme actuelle).</li>
+<li>n : élément actuel du tableau.</li>
+</ul>
+
+<p class="notice"><a href="exercice9.html">Retour à l'exercice</a></p>
+</div>
+</body>
+</html>

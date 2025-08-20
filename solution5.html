@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Solution Exercice 5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="exercice1.html">Ex 1</a>
+  <a href="exercice2.html">Ex 2</a>
+  <a href="exercice3.html">Ex 3</a>
+  <a href="exercice4.html">Ex 4</a>
+  <a href="exercice5.html">Ex 5</a>
+</div>
+
+<div class="container">
+<h1>Solution Exercice 5</h1>
+
+<h2>Code fonctionnel</h2>
+<pre>
+let texte = localStorage.getItem("texte");
+console.log(texte);
+</pre>
+
+<h2>Cours simplifié</h2>
+<p>
+- <strong>localStorage.getItem("clé")</strong> : récupère une donnée stockée.<br>
+- Si rien n’est enregistré, on peut afficher un message par défaut.<br>
+- <strong>console.log()</strong> et <strong>document.getElementById(...).textContent</strong> permettent de voir le résultat.
+</p>
+
+<p><strong>Exemple :</strong></p>
+<pre>
+let nom = localStorage.getItem("nom");
+console.log(nom || "Aucun nom trouvé");
+</pre>
+
+<p class="notice"><a href="exercice5.html">Retour à l'exercice</a></p>
+</div>
+</body>
+</html>

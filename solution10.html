@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Solution Exercice 10</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navbar">
+  <a href="exercice10.html">Ex 10</a>
+</div>
+
+<div class="container">
+<h1>Solution Exercice 10</h1>
+
+<pre>
+let count = 0;
+setInterval(() => {
+  count++;
+  console.log(count);
+}, 1000);
+</pre>
+
+<p>Cours simplifié :</p>
+<ul>
+<li><strong>setInterval(func, ms)</strong> : exécute <em>func</em> toutes les <em>ms</em> millisecondes.</li>
+<li>count++ : incrémente le compteur.</li>
+<li>document.getElementById('compteur').textContent = count : affiche le compteur dans la page.</li>
+<li>clearInterval(interval) : permet d’arrêter un compteur si nécessaire.</li>
+</ul>
+
+<p class="notice"><a href="exercice10.html">Retour à l'exercice</a></p>
+</div>
+</body>
+</html>
